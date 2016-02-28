@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Corporation Database System</title>
+
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Airline Corporation Database System</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#proposal" class="mdl-layout__tab is-active">Proposal</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="proposal">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <ul class="toc">
+                <h2>Contents</h2>
+                <a href="#introduction">Introduction</a>
+                <a href="#description">Description</a>
+                <a href="#requirements">Requirements</a>
+                <a href="#limitations">Limitations</a>
+                <a href="#er_diagram">Entity Relationship Diagram</a>
+                <a href="#conclusion">Conclusion</a>
+
+              </ul>
+
+              <h3 id="introduction">1.0 Introduction</h3>
+              <p>This report report explains the basic functionalities and extent of our Airline  Company Data Management System project. The databaseVcentered online system is going  to be developed in line with the principles and requirements provided in this report. What  we are aiming to achieve with this project, what are the basic functions, what roles will end  users have, what are the limitations and restrictions, how the project is going to be designed  and implemented, and how the database system will function is explained in detail to  establish a common basis for the expectations from the project.</p>
+
+              <p>The report starts with Problem Definition part where the scope, aim, and properties  of the Airline Company System is explained. Following chapter illustrates the importance of  database system for our project, explains why a database is needed and how the database  structure is going to be integrated to the project. Requirements chapter lists the extracted  requirements in 3 subcategories: Functional Requirements, Nonfunctional Requirements  and Pseudo Requirements. Functional Requirements are crucial to establish the scope and  functioning logic of the project. The requirements are grouped under 4 different end users:  customer, manager, salesperson and ticket/gate agents. According to their relation to the  system, the expected functions of the system are listed. Hence, what the system is expected  to do in various scenarios are explained. Moreover, by separating roles we established a  clear understanding of the logic. In Nonfunctional Requirements part, we provided  performance, reliability, security, usability goals for the system. In Pseudo Requirements,  implementation technologies and helper tools are listed. In the Limitations section, the  constraints on data, user roles and system functions are explained in detail to differentiate  between what is in or out of our scope.<p/>
+
+              <p>After defining project requirements, we provided the E/R diagram that will function  as the basis of our database design. While constructing the E/R diagram we considered the  requirements and functionalities of our system. We designed the diagram carefully so that  all requirements can be satisfied with such a database system and the information and  application structures can function simultaneously.<p/>
+
+
+              <h3 id="description">2.0 Project Description</h3>
+              <p>
+                Airline Company Data Management System is a webVbased application for  maintaining reservations of an airlineVcompany. The system includes information about  cities, airports, planes, flights, routes, reservations, sold/cancelled tickets, sales and  promotions, schedules and information of pilots and flight attendance. Using this data, the  system allows to view flight details, make/cancel reservations, buy/sell tickets. Customers are able to search for flights, make reservations, buy tickets, cancel their reservations with  certain penalties, get promotions, specify extra luggage and meal information. The system  also includes different flight classes such as business and economy, the prices for various  classes are kept separately. Salespersons and ticketing/gate agents can also access to  system to help the customer with reservation and purchasing operations. System manager  is administrator therefore is able to update flight, route, pricing, employment and airport  details.
+              </p>
+              <p>
+                The aim of our project is to establish an online reservation application for an airline  company to easily and efficiently manage flight reservations. Therefore, the system will  offer services to automate reservation and purchasing operations. By allowing the customer  to search for a particular flight, view flight details such as route, connecting flights if they  exist, flight time and price, make reservations and purchase tickets we intend customer to  complete the entire reservation process from the system and always access to updated  information through the system. The system is also useful for maintaining integrity and  accuracy. Considering thousands of customers, crew and flights; the information needs to  be controlled precisely to eliminate any problem or inconsistency.
+              </p>
+              <p>
+                Consequently, Airline Company Data Management System is intended to be an  online reservation system that maintains validity of data continuously and offers purposeV specific operations to end users to ease and perfect reservations of an airline company.
+              </p>
+              <h4>2.1 Why Do We Need a Database for Airline Company Data Management  System?</h4>
+              <p>
+                Our project aims to allow the airline company to manage a huge amount of data in a  proper way. Since an airline company has many different types of subjects such as crew,  planes, airports, cities, routes, reservations, seats, salespersons, prices, and promotions; it  would be very difficult to manage the data without an automated database system. Thus, by  the help of the database system, the company will be able to manage all of its main subjects  and their relations in an organized, quick, automated and easy manner.
+              </p>
+              <h4>2.2 How Do We Use a Database as Part of this Project? </h4>
+              <p>
+                Database is going to manage all data related to airline company. We use the  database management system to perform queries, data entries and updates in an  automated way. Moreover, database system is used for future planning as well. According  to intensity of flight reservations with respect to time, place and route; future flights are scheduled. The customer history and purchases is also tracked from the database system to  decide on promotions and sales.
+              </p>
+              <h3 id="requirements">3.0 Requirements</h3>
+              <h4>3.1 Functional Requirements </h4>
+              <p>
+                Airline Company Data Management System separates system functionalities for 4 end users:  customers, managers, salespersons and ticketing/gate agents.
+              </p>
+              <h5>3.1.1 Customer</h5>
+              <div>
+                <ul>
+                  <li>Customers should be able to view scheduled flights along with price, promotion, sales, connection details and duration information.</li>
+                  <li>Customers should be able to view prices of desired flights, get promotions and sales according to their flight history.</li>
+                  <li>Customers should be able to make reservations for available flights and cancel existing ones.</li>
+                  <li>Customers should be able to make payments of desired and available flights.</li>
+                  <li>Customers should be able to refund their purchased tickets with a penalty with respect to ticket type and remaining time to the flight.</li>
+                  <li>Customers should be able to choose seat, class, meal for their purchased tickets.</li>
+                  <li>Customers should be able to buy extra luggage for their purchased tickets.</li>
+                  <li>Customers should be able to cancel the extra luggage they bought before 24 hours from the flight.</li>
+                  <li>Customers should be able to view the current status of the flights that they have purchased a ticket for.  </li>
+                </ul>
+              </div>
+              <h5>3.1.2 Manager</h5>
+              <div>
+                <ul>
+                  <li>Managers should be able to register new planes to system, and delete the existing ones. </li>
+                  <li>Managers should be able to send planes for repairing and assign the returning ones as available.  </li>
+                  <li>Managers should be able to hire and fire stuff such as pilots, flight attendance, ground team etc.</li>
+                  <li>Managers should be able to add airports. </li>
+                  <li>Managers should be able to add routes between two existing airports and delete the existing ones.  </li>
+                  <li>Managers should be able to delete airports if there is no route assigned to them.  </li>
+                  <li>Managers should be able to create flights; change and cancel existing ones.  </li>
+                  <li>Managers should be able to set prices of current flights.  </li>
+                  <li>Managers should be able to apply promotions or sales to current flights or change/delete the current ones.  </li>
+                  <li>Managers should be able to create crew from existing and unassigned staff.  </li>
+                  <li>Managers should be able to assign crew to scheduled flights if available or remove the current assignments.  </li>
+                  <li>Managers should be able to view current reservations and purchased tickets for flights. </li>
+                  <li>Managers should be able to view the current status of the flights.  </li>
+                </ul>
+              </div>
+
+              <h5>3.1.3 Salesperson</h5>
+              <div>
+                <ul>
+                  <li>Salespersons should be able to view scheduled flights along with price, promotion, sales, connection details and duration information. </li>
+                  <li>Salespersons should be able to sell tickets and choose class, seat, and meal for purchased tickets. </li>
+                  <li>Salespersons should be able to cancel reservations. </li>
+                  <li>Salespersons should be able to take back the purchased tickets and refund them with a penalty with respect to ticket type and remaining time to the flight. </li>
+                  <li>Salespersons should be able to sell or cancel extra luggage. </li>
+                  <li>Salespersons should be able to view current reservations and purchased tickets for flights. </li>
+                  <li>Salespersons should be able to view the current status of the flights. </li>
+                </ul>
+              </div>
+              <h5>3.1.4 Ticketing/Gate Agent</h5>
+              <div>
+                <ul>
+                  <li>Ticketing / Gate Agents should be able to register the luggage.  </li>
+                  <li>Ticketing / Gate Agents should be able to cancel reservations.  </li>
+                  <li>Ticketing / Gate Agents should be able to assign seats for not checked in tickets. </li>
+                  <li>Ticketing / Gate Agents should be able to view current reservations and purchased tickets for flights. </li>
+                  <li>Ticketing / Gate Agents should be able to view the current status of the flights. </li>
+                </ul>
+              </div>
+
+              <h5>3.1.5 System Requirements</h5>
+              <div>
+                <ul>
+                  <li>The system should be able to block reservations after a flight is fully reserved. </li>
+                  <li>The system should be able to cancel reservations if the ticket is not purchased until 24 hours before the flight.  </li>
+                  <li>The system should be able to give promotions to customers according to their flight history. </li>
+                  <li>The system should be able to record and track delays. </li>
+                  <li>All staff can also be customers.</li>
+                </ul>
+              </div>
+
+              <h4>3.2 Nonfunctional Requirements </h4>
+              <h5>3.2.1 Quick Response Time & Scalability </h5>
+              <div>
+                <ul>
+                  <li>The  system  should  to  be  as  fast  and  scalable  as  possible.  Since  the  system  contains  big  amount of data and many users will be trying to interact with the system simultaneously,  the  response  time  might  grow  bigger  and  bigger.  To  prevent  a  long  waiting  time  and  to  have  faster  responses,  we  plan  to  use  multiVthreading  and  vertical  scaling  for  faster  information retrieval and space.  </li>
+                </ul>
+              </div>
+
+              <h5>3.2.2 Authentication</h5>
+              <div>
+                <ul>
+                  <li>Permissions of the actions of the users should be clearly specified and they must not be able to perform any extra action except the ones that they are given access to. </li>
+                </ul>
+              </div>
+
+              <h5>3.2.3 User-friendliness</h5>
+              <div>
+                <ul>
+                  <li>The system should be easily accessible and friendly, by meaning the user interface. </li>
+                  <li>Every user should be limited to see according to their permissions. For instance, customers or salespersons should not be able to see how managers can affect the system. By designing  the  system  in  this  way,  every  user  should  be  dealing  with  only  the  permissions  they  are  permitted. They should not be confused by seeing what are irrelevant to them.</li>
+                </ul>
+              </div>
+
+              <h5>3.2.4 Accurate Data Distribution </h5>
+              <div>
+                <ul>
+                  <li> The system should not overwrite any data under any circumstances unless needed. When needed, the data, which is wanted to be changed, should be removed and new data should be entered to the system. </li>
+                  <li>No  data  should  be  lost  during  the  actions.  Flights,  airports,  tickets  and  sales  should  be dependent  on  each  other  so  there  should  be  a  warning  if  any  of  these  are  missing  in  an action. In this way, possible data losses caused by the users will be prevented. </li>
+                </ul>
+              </div>
+
+              <h4>3.3 Pseudo Requirements</h4>
+              <div>
+                <ul>
+                  <li>MySQL will be used for database.</li>
+                  <li>Java will be used for backend.  </li>
+                  <li>Website will be created with HTML, JavaScript, CSS, HTML 5, PHP, Angular JS and  Bootstrap technologies.</li>
+                </ul>
+              </div>
+
+              <h3 id="limitations">4.0 Limitations</h3>
+              <div>
+                <ul>
+                  <li>The plane type will be determined according to the flight time. </li>
+                  <li>An airport can be added only after associated city is added. </li>
+                  <li>A route can be added only after associated airport is added. </li>
+                  <li>A route cannot be deleted if there is a current flight departing from or arriving at the  airport.  </li>
+                  <li>An airport cannot be deleted if there is an existing route associated with it. </li>
+                  <li>Customers cannot be able to sell tickets, register luggage, create airports or routes and hire personnel etc. </li>
+                  <li>Salesperson is a specific type of personnel in the system but it has its own boundaries as  well.  They  will  not  have  the  same  permissions  which  the  managers  have.  They  can  have  common permissions with gate agents. </li>
+                  <li>Ticketing/gate agent personnel can mainly register customers to their flights and are able  to do the main work for paid tickets. For instance, they can register luggage, view the flight  details for the purchased tickets and assign seats for customers. On a lighter note, they can  have common permissions with salesperson.</li>
+                  <li>Managers are the people who are in charge of the management of the system. They have  all the permission from hiring new staff to arranging all the flights, planes and even airports  in the system. </li>
+                </ul>
+              </div>
+              <h3 id="er_diagram">5.0 Entity Relationship Diagram (Click to see the big version)</h3>
+              <a href="images/Airline%20Diagram.png"><img src="images/Airline_Diagram_small.png"></a>
+              <h3 id="conclusion">6.0 Conclusion</h3>
+              <p>
+                The Airline Company Data Management System is a webVbased application for  efficiently and accurately handling scheduling, reservation, and purchasing operations for an  airline company. By providing distinguished services to different users, the system keeps  track of all data of the company and allows integration of various functionalities.
+              </p>
+              <p>
+                In this report, we described the project and explained the importance of using  database management system as a part of the project. Then we listed functional  requirements in order to clarify which end user is expected to perform which operations. In  the nonfunctional requirements we described properties of the system and domain while  the implementation details are provided in pseudo requirements. The limitations of the  system are also established. Finally, we provided Entity Relationship Diagram as the basis of  our database design. We included link to our website we will use to publish our reports.
+              </p>
+            </div>
+          </section>
+        </div>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--bottom-section">
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="https://github.com/mertaytore">Mert Aytore</a></li>
+              <li><a href="https://github.com/oguzdemir">Oguz Demir</a></li>
+              <li><a href="https://github.com/BercesteDincer">Ayse Berceste Dincer</a></li>
+              <li><a href="https://github.com/furkansahin">Mehmet Furkan Sahin</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
