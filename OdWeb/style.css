@@ -1,0 +1,171 @@
+/* Importing Amaranth Font for menu text */
+		@import url(http://fonts.googleapis.com/css?family=Amaranth);
+
+	
+
+/* Basic layout */
+body{
+	background-color: #fff;
+}
+.wrapper{
+	width:1024px;
+	margin: 0 auto 0 auto;
+	padding: 50px;
+}
+
+
+
+.contain{
+	float:left;
+}
+#twos{
+	float:left;
+}
+img.logo{
+	float: left;
+}
+
+
+nav{
+	width: 960px;
+	margin: 0 auto;
+}
+
+section.stretch{
+	float: left;
+	height: 1500px;
+	width: 100%;
+}
+
+section.stretch p{
+	font-family: 'Amaranth', sans-serif;
+	font-size: 30px;
+	color: #969696;
+	text-align: center;
+	position: relative;
+	margin-top: 250px;
+}
+
+section.stretch p.bottom{
+	top: 100%;
+}
+
+
+header{
+	background-color: #000;
+	height: 250px;
+	width: 1000px;
+	top: 0;
+	position: fixed;
+	padding: 0 5px 0 5px;
+	border-bottom: 12px solid #aaaaaa;
+
+}
+
+header a{
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Amaranth', sans-serif;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/* Sizes for the bigger menu */
+header.large{
+	background-image: url('img/logo4.png');
+	background-size: 1024px 200px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-color: #fff;
+	height: 200px;
+	width: 1024px;
+	top: 0;
+	position: fixed;
+	border-bottom: 3px solid #227107;
+	
+}
+
+.large img{
+	width: 190px;
+	height: %100px;
+}
+.large ul	{
+	float:left;
+	margin: 0 auto 0 auto;
+	color: #f0f0f0;
+	font-size : 20px;
+	text-align: center;
+	padding-top: 75px;
+	list-style-type: none;
+	float: left;
+}
+
+.large li	{
+	float:left;
+	margin-top: 150px;
+	margin-left: 100px;
+	
+	border-style: solid;
+    border-left: solid;
+	border-right: solid;
+	padding: 0 15px 0 15px;
+	border-color: rgba(21,81,5,0.5);
+	display: inline;
+	display: inline;
+	float: left;
+}
+
+
+/* Sizes for the smaller menu */
+header.small{ 
+	background-image: url('img/logo3.png');
+	background-size: 242px 203px;
+	background-repeat: no-repeat;
+	background-position: left;
+	/* Make the background image cover the area of the <div>, and clip the excess */
+	background-color: #fff;
+	height: 50px;
+	width: 1024px;
+	top: 0;
+	position: fixed;
+	padding: 0 5px 0 5px;
+	border-bottom: 3px solid #227107;
+}
+
+header.small img{ 
+	overflow: hidden;
+	width: %100; 
+	height: 70px; 
+	margin-top: -10px; 
+}
+
+.small ul	{
+	float:right;
+	margin: 0 auto 0 auto;
+	color: #f0f0f0;
+	font-size : 20px;
+	text-align: center;
+	padding: 15px 0 10px 0;
+	list-style-type: none;
+	float: right;
+}
+
+.small li	{
+	float:left;
+	
+	border-style: solid;
+    border-left: solid;
+	border-right: solid;
+	padding: 0 15px 0 15px;
+	border-color: rgba(21,81,5,0.5);
+	display: inline;
+	display: inline;
+	float: left;
+}
+
+#breaksection{
+	height: 300px;
+}
