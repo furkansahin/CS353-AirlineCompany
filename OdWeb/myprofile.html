@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="countdown.js"></script>
+	
+	<link href='https://fonts.googleapis.com/css?family=New+Rocker' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="jquery.bootstrap-touchspin.js"></script>
+	<!-- ... -->
+	  <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+	  <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	  <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+	  <link rel="stylesheet" type="text/css" href="manager_style.css">
+	<title> User Profile </title>
+</head>
+<body>
+	
+	<div class = "wrapper">
+		<header>
+		
+			<ul>
+				<li>My Profile</li>
+				<li><button type="button" class="btn btn-primary">LOG OUT</button></li>
+			</ul>
+	
+		</header>		
+		
+		<div id = "breaksection2">
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+		
+		
+					<form class="form-signin">
+						<label for="formuname" >UserName </label>
+						<input type="text" id="formuname" class="form-control" value="Username" disabled>
+						
+						<label for="formupass" >Password </label>
+						<input type="password" id="formupass" class="form-control" value = "password" disabled>
+						
+						<label for="formrepas1" >New Password </label>
+						<input type="password" id="formrepas1" class="form-control" placeholder="New Password" >
+						
+						<label for="formrepas2" >Repeat New Password </label>
+						<input type="password" id="formrepas2" class="form-control" placeholder="New Password" >
+						
+						<label for="formname" >Name </label>
+						<input type="text" id="formname" class="form-control" value ="CurrentName" required="">
+						
+						<label for="formbirth" >Birthdate </label>
+						<input type="date" id="formbirth" class="form-control" value ="1111-11-11" required="">
+						
+						<label for="formpassport" >Passport Number </label>
+						<input type="text" id="formpassport" class="form-control" value ="A0000000" required="">
+						
+						<label >Current Mil Sum : 100000 </label>
+						<br/>
+
+						<button class="btn btn-lg" type="submit">Exit without Changes</button>	  
+						<button class="btn btn-lg" type="submit">Save Changes</button>
+					</form>	
+			</div>
+		</div>
+	</div>
+			
+</body>
+</html>

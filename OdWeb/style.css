@@ -59,7 +59,7 @@ header{
 	position: fixed;
 	padding: 0 5px 0 5px;
 	border-bottom: 12px solid #aaaaaa;
-
+	z-index : 20;
 }
 
 header a{
@@ -168,4 +168,7 @@ header.small img{
 
 #breaksection{
 	height: 300px;
+}
+#breaksection2{
+	height: 100px;
 }
