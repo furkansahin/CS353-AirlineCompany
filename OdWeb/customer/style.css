@@ -32,12 +32,16 @@ header a{
 	text-transform: uppercase;
 }
 
+header a.active{
+	color: #227197;
+}
+
 
 
 
 /* Sizes for the bigger menu */
 header.large{
-	background-image: url('img/logo4.png');
+	background-image: url('../img/logo4.png');
 	background-size: 1024px 200px;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -73,7 +77,7 @@ header.large{
 
 /* Sizes for the smaller menu */
 header.small{ 
-	background-image: url('img/logo3.png');
+	background-image: url('../img/logo3.png');
 	background-size: 242px 203px;
 	background-repeat: no-repeat;
 	background-position: left;
@@ -118,5 +122,7 @@ header.small{
 #breaksection2{
 	height: 100px;
 }
-
-
+.panel-heading button
+{
+	margin-left: 10px;
+}

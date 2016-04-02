@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 
-	<title> AirLine Corp </title>
+	<title> Customer Page </title>
 	
 	
 	<!-- CSS Files -->
@@ -18,9 +19,9 @@
 	
 	
 	<!-- Datetime pickler -->
-	<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
-	<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-	<link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+	<script type="text/javascript" src="../bower_components/moment/min/moment.min.js"></script>
+	<script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<link rel="stylesheet" href="../bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 	
 	<!-- Collapsing header with scroll down -->
 	
@@ -34,15 +35,17 @@
 				}
 			});
 	</script>
-	
 </head>
+
 <body>
 	<div class = "wrapper">
 					
 		<header class="large">
 				<ul>
-					<li><a href="#" data-toggle="modal" data-target="#basicModal" >Log In</a></li>
-					<li><a href="#">Register</a></li>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="myprofile.html">My Profile</a></li>
+					<li><a href="../index.html">Log Out</a></li>
 				</ul>
 		</header>
 				
@@ -253,7 +256,7 @@
 			<!-- Right ad -->
 			<div class='col-md-6'>
 			
-				<img src= "img/sample1.jpg" class="img-responsive">
+				<img src= "../img/sample1.jpg" class="img-responsive">
 			
 			</div>
 			
@@ -267,13 +270,13 @@
 		<div class = "row">
 			<div class='col-md-6'>
 			
-				<img src= "img/sample2.jpg" class="img-responsive">
+				<img src= "../img/sample2.jpg" class="img-responsive">
 			
 			</div>
 
 			<div class='col-md-6'>
 			
-				<img src= "img/sample2.jpg" class="img-responsive">
+				<img src= "../img/sample2.jpg" class="img-responsive">
 			
 			</div>
 		</div>
@@ -289,37 +292,5 @@
 		</div>
 
 	</div><!-- End of wrapper -->
-	
-	
-	<!-- Modal for login -->
-	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-		 <div class="modal-dialog modal-sm">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">User Login</h4>
-				</div>
-				<div class="modal-body">
-
-					<form class="form-signin">
-					<label for="inputEmail" class="sr-only">Email address</label>
-					<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-					<label for="inputPassword" class="sr-only">Password</label>
-					<input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-					<div class="checkbox">
-					  <label>
-						<input type="checkbox" value="remember-me"> Remember me
-					  </label>
-					</div>
-					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button><!-- 
-					<a href="manager/index.html" class="btn btn-lg btn-primary btn-block" >Manager</a>
-					<a href="salesperson/index.html" class="btn btn-lg btn-primary btn-block" >Salesperson</a>
-					<a href="customer/index.html" class="btn btn-lg btn-primary btn-block" >Customer</a> -->
-				  </form>
-
-				</div> <!-- /container -->
-			</div>
-		</div>
-	</div>
 </body>
 </html>
